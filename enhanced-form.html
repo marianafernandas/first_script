@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Content and Forms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        header, section, footer {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+        }
+        h2 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        img, video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            margin-bottom: 15px;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Enhancing HTML5 Content & Mastering Forms</h1>
+</header>
+
+<!-- Section 1: Lists -->
+<section>
+    <h2>My Favorite Hobbies</h2>
+    <ul>
+        <li>Reading books</li>
+        <li>Cooking</li>
+        <li>Traveling</li>
+    </ul>
+
+    <h3>Steps to Bake a Cake</h3>
+    <ol>
+        <li>Preheat the oven</li>
+        <li>Mix ingredients</li>
+        <li>Bake for 30 minutes</li>
+    </ol>
+</section>
+
+<!-- Section 2: Table -->
+<section>
+    <h2>Weekly Study Schedule</h2>
+    <table>
+        <tr>
+            <th>Day</th>
+            <th>Subject</th>
+            <th>Duration</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>Math</td>
+            <td>2 hours</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>Science</td>
+            <td>1.5 hours</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>History</td>
+            <td>2 hours</td>
+        </tr>
+    </table>
+</section>
+
+<!-- Section 3: Media -->
+<section>
+    <h2>Media Example</h2>
+    <img src="https://via.placeholder.com/600x300" alt="Sample Image">
+    <video controls>
+        <source src="sample-video.mp4" type="video/mp4">
+        Your browser does not support video playback.
+    </video>
+</section>
+
+<!-- Section 4: HTML5 Form -->
+<section>
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fullname">Full Name*</label>
+            <input type="text" id="fullname" name="fullname" required maxlength="50">
+
+            <label for="email">Email Address*</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number*</label>
+            <input type="tel" id="phone" name="phone" required pattern="[0-9]{9,15}" placeholder="Digits only">
+
+            <label for="dob">Date of Birth*</label>
+            <input type="date" id="dob" name="dob" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Account Details</legend>
+            <label for="username">Username*</label>
+            <input type="text" id="username" name="username" required maxlength="20">
+
+            <label for="password">Password*</label>
+            <input type="password" id="password" name="password" required minlength="8">
+
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender">
+                <option value="">--Select--</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferences</legend>
+            <label>Subscribe to newsletter:</label>
+            <input type="radio" id="yes" name="newsletter" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="newsletter" value="no">
+            <label for="no">No</label>
+
+            <label for="comments">Additional Comments</label>
+            <textarea id="comments" name="comments" maxlength="300"></textarea>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<footer>
+    <p style="text-align:center;">&copy; 2025 HTML5 Forms Project</p>
+</footer>
+
+</body>
+</html>
